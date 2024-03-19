@@ -126,7 +126,7 @@
 
     .main-container .the-app  .million-of-happy-users a:hover{
     background-color: unset;
-    border: 1px solid var(--primary-black);
+    box-shadow: 0px 0px 0px 1px var(--primary-black);
     color: unset;
     }
 
