@@ -182,9 +182,9 @@ row-gap: 20px;
 /* End Hero-Main-Container-Right */
 
 
-/* Media Queries Only for Mobile Devices who have 400px */
+/* Media Queries Only for Mobile Devices who have 365px */
 
-@media (max-width: 400px){
+@media (max-width: 365px){
 
 .main-container .home{
 height: 100%;

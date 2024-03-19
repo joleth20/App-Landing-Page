@@ -5,7 +5,7 @@
    --primary-background: #373B44;  /* fallback for old browsers */
    --primary-webkit-linear-gradient: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
    --primary-linear-gradient: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
-   
+   --hover-download-app-now:#1C7962;
    /* Font-Family */
       --primary-futura-lt:'Futura LT', sans-serif;
 }
@@ -13,5 +13,121 @@
 .main-container .the-app{
     height: 544px;
     width: 100%;
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* reinventing-mobile-technology */
+
+.main-container .the-app .reinventing-mobile-technology{
+    height:436px;
+    width: 490px;
+    padding: 30px 30px;
+    /* layout */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-container .the-app .reinventing-mobile-technology h2{
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 48px;
+    font-weight: normal;
+}
+
+/* million-of-happy-users */
+
+.main-container .the-app  .million-of-happy-users{
+    height:436px;
+    width: 490px;
+    padding: 30px 30px;
+}
+
+.main-container .the-app  .million-of-happy-users > p{
+    height: 68px;
+    width: 254px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.main-container .the-app  .million-of-happy-users > span p{
+    height: 161px;
+    width: 371px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    font-weight: normal;
+    margin: 15px 0px;
+}
+
+.main-container .the-app  .million-of-happy-users a{
+    height: 42px;
+    width: 183px;
+    padding: 10px 25px;
+    box-shadow: 0px 0px 0px 1px var(--primary-black);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    transition: all 700ms ease;
+    outline: none;
+}
+
+.main-container .the-app  .million-of-happy-users a:hover{
+   background-color: var(--hover-download-app-now);
+   box-shadow: 0px 0px 0px 0px;
+   color: var(--primary-white);
+   cursor: pointer;
+}
+
+
+
+/* Media Queries Only for Mobile Devices who have 365px */
+
+@media (max-width: 365px){
+
+    .main-container .the-app {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .main-container .the-app .reinventing-mobile-technology {
+        height: 156px;
+        padding: 45px 30px;
+    }
+    .main-container .the-app .reinventing-mobile-technology h2 {
+        font-size: 30px;
+    }
+
+    .main-container .the-app .million-of-happy-users {
+        height: 364px;
+        padding: 0px 30px;
+    }
    
+    .main-container .the-app .million-of-happy-users > p {
+        font-size: 18px;
+    }
+
+    .main-container .the-app .million-of-happy-users > span p {
+        width: 100%;
+        font-size: 14px;
+        margin: unset;
+    }
+
+    .main-container .the-app  .million-of-happy-users a{
+        transition: unset;
+    }
+
+    .main-container .the-app  .million-of-happy-users a:hover{
+    background-color: unset;
+    border: 1px solid var(--primary-black);
+    color: unset;
+    }
+
+}
