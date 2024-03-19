@@ -122,6 +122,7 @@
 
     .main-container .the-app  .million-of-happy-users a{
         transition: unset;
+        box-shadow: 0px 0px 0px 1px var(--primary-black);
     }
 
     .main-container .the-app  .million-of-happy-users a:hover{
