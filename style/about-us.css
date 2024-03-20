@@ -1,0 +1,108 @@
+:root{
+    --primary-white:#FFFFFF;
+    --primary-black:#000000;    
+   --header-background:#161635;    
+   --primary-background: #373B44;  /* fallback for old browsers */
+   --primary-webkit-linear-gradient: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+   --primary-linear-gradient: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+   --hover-menu-container: #B3B3DF; 
+   
+   /* Font-Family */
+   --primary-futura-lt:'Futura LT';
+   }
+   
+.main-container .about-us{
+    height: 520px;
+    width: 100%;
+    background: var(--primary-background);
+    background: var(--primary-webkit-linear-gradient);
+    background: var(--primary-linear-gradient); 
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.main-container .about-us .our-story{
+    height: 490px;
+    width: 423px;
+    padding: 40px 60px;
+}
+
+.main-container .about-us .our-story span{
+   color: var(--primary-white);
+   font-family: var(--primary-futura-lt);
+   font-size: 48px;
+}
+
+.main-container .about-us .anyone-can-grow{
+    height: 490px;
+    width: 423px;
+    padding: 40px 60px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.main-container .about-us .anyone-can-grow p{
+    height: 67px;
+    width: 261px;
+    color: var(--primary-white);
+    font-family: var(--primary-futura-lt);
+    font-size: 24px;
+}
+
+.main-container .about-us .anyone-can-grow span{
+    height: 161px;
+    width: 371px;
+    color: var(--primary-white);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width: 365px){
+    .main-container .about-us {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .main-container .about-us .our-story {
+        height: 115px;
+        width: 320px;
+        padding: 40px 30px;
+    }
+    .main-container .about-us .our-story span {
+        font-size: 30px;
+    }
+
+    .main-container .about-us .anyone-can-grow {
+        height: 300px;
+        width: 320px;
+        padding: 10px 30px;
+        row-gap: 15px;
+}
+
+.main-container .about-us .anyone-can-grow p {
+   height: 50px;
+   width: 170px;
+   font-size: 18px;
+}
+
+.main-container .about-us .anyone-can-grow span{
+    height: 165px;
+    width: 279px;
+    font-size: 14px;
+}
+
+
+
+}
+
+
+
