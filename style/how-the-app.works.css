@@ -1,0 +1,257 @@
+:root{
+    --primary-white:#FFFFFF;
+    --primary-black:#000000;    
+   --header-background:#161635;    
+   --primary-background: #373B44;  /* fallback for old browsers */
+   --primary-webkit-linear-gradient: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+   --primary-linear-gradient: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+   --hover-menu-container: #B3B3DF; 
+   
+   /* Font-Family */
+   --primary-futura-lt:'Futura LT';
+}
+
+.main-container .app-works{
+    height: 1245px;
+    width: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.main-container .app-works .app-works-top{
+    height: 634px;
+    width: 980px;
+    /* layout */
+    display: flex;
+}
+
+.main-container .app-works .app-works-top .text-app-works{
+    height: 634px;
+    width: 490px;
+    padding: 80px 20px;
+}
+
+.main-container .app-works .app-works-top .text-app-works .text-1{
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.main-container .app-works .app-works-top .text-app-works .text-2{
+    height: 28px;
+    width: 69px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+}
+
+.main-container .app-works .app-works-top .text-app-works .text-3{
+    height: 68px;
+    width: 205px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.main-container .app-works .app-works-top .text-app-works .text-4{
+    height: 140px;
+    width: 239px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+}
+
+.main-container .app-works .app-works-top .mobile-app-works{
+   height: 634px;
+   width: 490px;
+   padding: 0px 45px;
+   /* layout */
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.main-container .app-works .app-works-top .mobile-app-works .personalized-container-img{
+    height: 584px;
+    width: 284px;
+    background: url(../assets/personalized-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid var(--primary-black);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.main-container .app-works .app-works-bottom{
+    height: 467px;
+    width: 980px;
+    /* layout */
+    display: flex;   
+}
+
+.main-container .app-works .app-works-bottom .tablet-cloud-based{
+  height: 467px;
+  width: 627px;
+  /* layout */
+  display: flex;
+  align-items: center;
+}
+
+.main-container .app-works .app-works-bottom .tablet-cloud-based .cloud-base-container-img{
+    height: 284px;
+    width: 584px;
+    background: url(../assets/cloud-base-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid var(--primary-black);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.main-container .app-works .app-works-bottom .cloud-based{
+height: 467px;
+width: 352px;
+padding: 0px 45px;
+/* layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.main-container .app-works .app-works-bottom .cloud-based .text-1{
+height:28px;
+width: 50px;
+color: var(--primary-black);
+font-family: var(--primary-futura-lt);
+font-size: 16px;
+font-weight: normal;
+}
+
+
+.main-container .app-works .app-works-bottom .cloud-based .text-2{
+    height:68px;
+    width: 184px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+.main-container .app-works .app-works-bottom .cloud-based .text-3{
+    height:140px;
+    width: 239px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Media Queries */
+
+@media (max-width:365px){
+    .main-container .app-works {
+        height: 100%;
+        row-gap: unset; 
+
+    }    
+    .main-container .app-works .app-works-top {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-container .app-works .app-works-top .text-app-works {
+        height: 320px;
+        width: 320px;
+        padding: 30px 20px;
+    }
+
+    .main-container .app-works .app-works-top .text-app-works .text-1{
+        font-size: 30px;
+    }
+
+    .main-container .app-works .app-works-top .text-app-works .text-2{
+        height: 25px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .main-container .app-works .app-works-top .text-app-works .text-3{
+        height: 50px;
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .main-container .app-works .app-works-top .text-app-works .text-4{
+        height: 98px;
+        width: 272px;
+        font-size: 14px;
+    }
+   
+    .main-container .app-works .app-works-top .mobile-app-works {
+        height: 354px;
+        width: 320px;
+        justify-content: center;
+    }
+
+    .main-container .app-works .app-works-top .mobile-app-works .personalized-container-img {
+        height: 323px;
+        width: 157px;
+        border: 7px solid var(--primary-black);
+    }
+    
+    .main-container .app-works .app-works-bottom {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.main-container .app-works .app-works-bottom .cloud-based {
+    height: 233px;
+    width: 320px;
+    padding: 0px 30px;
+    order: 1;
+}
+
+.main-container .app-works .app-works-bottom .cloud-based .text-1{
+  height: 24px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.main-container .app-works .app-works-bottom .cloud-based .text-2{
+    height: 50px;
+    width: 190px;
+    font-size: 18px;
+}
+
+.main-container .app-works .app-works-bottom .cloud-based .text-3{
+    height: 98px;
+    width: 272px;
+    font-size: 14px;
+}
+
+.main-container .app-works .app-works-bottom .tablet-cloud-based{
+    height: 190px;
+    width: 320px;
+    justify-content: center;
+    order: 2;
+}
+
+.main-container .app-works .app-works-bottom .tablet-cloud-based .cloud-base-container-img{
+    height: 145px;
+    width: 294px;
+    border: 7px solid var(--primary-black);
+}
+
+
+
+}
