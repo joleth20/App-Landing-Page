@@ -1,0 +1,193 @@
+:root{
+    --primary-white:#FFFFFF;
+    --primary-black:#000000;    
+   --header-background:#161635;    
+   --primary-background: #373B44;  /* fallback for old browsers */
+   --primary-webkit-linear-gradient: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+   --primary-linear-gradient: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+   --hover-menu-container: #B3B3DF; 
+   --box-shadow:  0.00px 1.00px 50px 10px rgba(199, 199, 199, 0.25);
+   --blockquote-color:#595959;
+   /* Font-Family */
+   --primary-futura-lt:'Futura LT';
+   }
+
+
+.main-container .reviews{
+    height: 761px;
+    width: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}   
+
+
+.main-container .reviews .satified-customers{
+    height: 306px;
+    width: 980px;
+    padding: 0 50px;
+    /* layout */
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-container .reviews .satified-customers h2{
+    height: 131px;
+    width: 213px;
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.main-container .reviews .reviews-boxes{
+    height: 330px;
+    width: 980px;
+    padding: 30px 20px;
+    /* layout */
+    display: flex;
+    column-gap: 20px;
+}
+
+.main-container .reviews .reviews-boxes >div{
+    height: 330px;
+    width: 310px;
+    background-color: var(--primary-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    padding: 25px 25px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(1) blockquote{
+    color: var(--blockquote-color);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    letter-spacing: 0em;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(1) p{
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 14px;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(1) .stars{
+ width: 100px;
+ margin-top: -20px;
+ /* layout */
+ display: flex;
+ column-gap: 7px;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(2) blockquote{
+    color: var(--blockquote-color);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    letter-spacing: 0em;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(2) p{
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 14px;
+}
+
+.main-container .reviews .reviews-boxes .box:nth-child(2) .stars{
+    width: 100px;
+    margin-top: -20px;
+    /* layout */
+    display: flex;
+    column-gap: 7px;
+   }
+
+   .main-container .reviews .reviews-boxes .box:nth-child(3) blockquote{
+    color: var(--blockquote-color);
+    font-family: var(--primary-futura-lt);
+    font-size: 16px;
+    letter-spacing: 0em;
+} 
+
+.main-container .reviews .reviews-boxes .box:nth-child(3) p{
+    color: var(--primary-black);
+    font-family: var(--primary-futura-lt);
+    font-size: 14px;
+}
+
+   .main-container .reviews .reviews-boxes .box:nth-child(3) .stars{
+    width: 100px;
+    margin-top: -20px;
+    /* layout */
+    display: flex;
+    column-gap: 7px;
+   }
+
+   /* Media Queries */
+
+   @media (max-width:365px){
+   
+    .main-container .reviews {
+        height: 1070px;
+        padding: 30px 30px;
+        row-gap: unset;
+    }   
+
+    .main-container .reviews .satified-customers {
+        height: 84px;
+        width: 280px;
+        padding: unset;
+
+    }
+
+    .main-container .reviews .satified-customers h2{
+        height: 83px;
+        width: 133px;
+        font-size: 30px;
+    }
+    
+    .main-container .reviews .reviews-boxes {
+        height: 100%;
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        row-gap: unset;
+        flex-wrap: wrap;
+    }
+
+    .main-container .reviews .reviews-boxes .box:nth-child(1) blockquote {
+        height: 67px ;
+        width: 225px;
+    }
+
+    
+    .main-container .reviews .reviews-boxes .box:nth-child(1) p{
+        font-size: 15px;
+    }
+
+    .main-container .reviews .reviews-boxes .box:nth-child(2) blockquote {
+        height: 67px ;
+        width: 225px;
+    }
+
+        
+    .main-container .reviews .reviews-boxes .box:nth-child(2) p{
+        font-size: 15px;
+    }
+
+    .main-container .reviews .reviews-boxes .box:nth-child(3) blockquote {
+        height: 67px ;
+        width: 225px;
+    }
+
+        
+    .main-container .reviews .reviews-boxes .box:nth-child(3) p{
+        font-size: 15px;
+    }
+
+
+   }
