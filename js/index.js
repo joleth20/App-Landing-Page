@@ -5,8 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const hamBurger = document.querySelector('.hamburger')
   const menuContainer = document.querySelector('.menu-container')
 
-
-  
   hamBurger.addEventListener('click', () => {
     if(hamBurger.className.includes('bars')){
         // hamBurger
