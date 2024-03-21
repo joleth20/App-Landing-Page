@@ -132,7 +132,7 @@
    @media (max-width:365px){
    
     .main-container .reviews {
-        height: 1070px;
+        height: 100%;
         padding: 30px 30px;
         row-gap: unset;
     }   

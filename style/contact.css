@@ -6,6 +6,7 @@
    --primary-webkit-linear-gradient: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
    --primary-linear-gradient: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
    --hover-menu-container: #B3B3DF; 
+   --invalid-form: #c03636;
    
    /* Font-Family */
    --primary-futura-lt:'Futura LT';
@@ -80,6 +81,7 @@ font-size: 16px;
     background: none;
     border: none;
     border-bottom: 1px solid var(--primary-white);
+    color: var(--primary-white);
     outline: none;
 }
 
@@ -93,8 +95,8 @@ font-size: 16px;
     border-bottom: 2px solid var(--primary-white);
 }
 
-.main-container .contact .contact-right form .firstname input:invalid{
-    border-bottom: 2px solid red;
+.main-container .contact .contact-right form .firstname input:focus:invalid{
+    border: 3px solid var(--invalid-form);
 }
 
 .main-container .contact .contact-right form .lastname{
@@ -118,7 +120,17 @@ font-size: 16px;
         background: none;
         border: none;
         border-bottom: 1px solid var(--primary-white);
+        color: var(--primary-white);
         outline: none;
+    }
+    
+    .main-container .contact .contact-right form .lastname input:focus{
+        color: var(--primary-white);
+        border-bottom: 3px solid var(--primary-white);
+    }
+
+    .main-container .contact .contact-right form .lastname input:focus:invalid{
+        border: 3px solid var(--invalid-form);
     }
 
     
@@ -126,15 +138,6 @@ font-size: 16px;
         border-bottom: 2px solid var(--primary-white);
     }
 
- 
-.main-container .contact .contact-right form .lastname input:focus{
-    color: var(--primary-white);
-    border-bottom: 2px solid var(--primary-white);
-}
-
-.main-container .contact .contact-right form .lastname input:invalid{
-    border-bottom: 2px solid red;
-}
 
 .main-container .contact .contact-right form .email{
     height: 70px;
@@ -163,8 +166,18 @@ font-size: 16px;
     border: none;
     border-bottom: 1px solid var(--primary-white);
     color: var(--primary-white);
+    padding: 3px 3px 3px 8px;
     font-family: var(--primary-futura-lt);
     outline: none;
+}
+
+.main-container .contact .contact-right form .email input:focus{
+    color: var(--primary-white);
+    border-bottom: 3px solid var(--primary-white);
+}
+
+.main-container .contact .contact-right form .email input:focus:invalid{
+    border: 3px solid var(--invalid-form);
 }
 
 .main-container .contact .contact-right form .email input:hover{
@@ -200,6 +213,10 @@ font-size: 16px;
     font-family: var(--primary-futura-lt);
     resize: unset;
     outline: none;
+}
+
+.main-container .contact .contact-right form .leave-message textarea:focus:invalid{
+    border: 3px solid var(--invalid-form);
 }
 
 .main-container .contact .contact-right form .leave-message textarea:hover{
