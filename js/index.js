@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const hamBurger = document.querySelector('.hamburger')
   const menuContainer = document.querySelector('.menu-container')
-  const removeHref = document.querySelectorAll('.remove-href')
+
 
   
   hamBurger.addEventListener('click', () => {
@@ -29,13 +29,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  menuContainer.addEventListener('click', event => {
-    if (event.target.tagName === 'A') {
-      menuContainer.classList.remove('show', 'background');
-      hamBurger.classList.replace('close', 'bars');
-      document.body.style.overflow = 'auto';
+  menuContainer.addEventListener('click', e => {
+    if(e.target.tagName === 'A'){
+        menuContainer.classList.remove('show')
+        menuContainer.classList.add('hide')
+        hamBurger.classList.remove('close')
+        hamBurger.classList.add('bars')
+        document.body.style.overflow = 'auto'
     }
-  });
+  })
 
 //  Removing Classes when screen reached max 400px
   window.addEventListener('resize', () => {
